@@ -1,0 +1,22 @@
+button {
+  transition: all .3s linear; }
+
+.submit {
+  display: block;
+  float: right;
+  margin: 20px 0; }
+
+.btn-flat {
+  border-radius: 0;
+  background: transparent;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px; }
+  .btn-flat.green {
+    border: 1px solid #1c8d43;
+    color: #1c8d43; }
+    .btn-flat.green:hover, .btn-flat.green:active, .btn-flat.green:focus {
+      color: #ffffff;
+      background-color: #1c8d43; }
+  .btn-flat.disabled {
+    border: 1px #e0e0e0 solid; }

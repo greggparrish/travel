@@ -1,33 +1,127 @@
-.App {
-  text-align: center;
-}
+h1 {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700; }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
+h1, h2, h3 {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  display: block; }
 
-.App-header {
-  background-color: #282c34;
+a {
+  color: #28a3dc; }
+  a:hover {
+    transition: color 0.3s;
+    color: #012c5b; }
+
+.fa-stack {
+  width: 100%;
+  margin: 0 auto;
+  display: block; }
+
+button {
+  transition: all .3s linear; }
+
+.submit {
+  display: block;
+  float: right;
+  margin: 20px 0; }
+
+.btn-flat {
+  border-radius: 0;
+  background: transparent;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px; }
+  .btn-flat.green {
+    border: 1px solid #1c8d43;
+    color: #1c8d43; }
+    .btn-flat.green:hover, .btn-flat.green:active, .btn-flat.green:focus {
+      color: #ffffff;
+      background-color: #1c8d43; }
+  .btn-flat.disabled {
+    border: 1px #e0e0e0 solid; }
+
+table, tr, th, td {
+  transition: all .5s linear; }
+
+th {
+  text-transform: capitalize; }
+
+input.form-control {
+  border-radius: 0;
+  margin: 15px 0; }
+
+#root {
+  height: 100%;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  font-size: 16px; }
+  #root #content-wrapper {
+    flex: 1;
+    margin: 0 auto;
+    width: 100%; }
 
-.App-link {
-  color: #61dafb;
-}
+:focus {
+  outline: 0 !important; }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+section {
+  margin: 40px 0;
+  padding: 40px 0; }
+  section h2 {
+    margin: 0 auto; }
+  section#about {
+    background: #e0e0e0;
+    text-align: center; }
+  section#overpaid h2 {
+    text-align: center; }
+  section#searchbox {
+    margin-top: -100px;
+    padding: 160px 0;
+    color: #ffffff;
+    background-image: url("/images/structural/header.jpg"); }
+    section#searchbox .btn {
+      padding: 20px; }
+    section#searchbox .searchbox-wrapper {
+      min-height: 400px;
+      background: rgba(244, 244, 244, 0.9);
+      border-radius: .5em;
+      padding: 3%; }
+      section#searchbox .searchbox-wrapper h3 {
+        color: #000000;
+        font-weight: 700; }
+      section#searchbox .searchbox-wrapper.flights .fa-circle {
+        color: #28a3dc; }
+      section#searchbox .searchbox-wrapper.hotels .fa-circle {
+        color: #27ae60; }
+    section#searchbox h1 {
+      text-align: center;
+      margin: 50px 0 20px 0;
+      font-size: 3em; }
+    section#searchbox h3 {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 2em; }
+
+footer {
+  color: #012c5b;
+  background: #e0e0e0;
+  padding: 40px 0;
+  margin-top: 10px; }
+
+nav {
+  font-family: 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  overflow: auto;
+  background-color: transparent; }
+  nav .navbar-brand {
+    font-size: 1.2em;
+    color: #3498db !important; }
+  nav a {
+    color: #3498db !important;
+    text-transform: uppercase; }
+  nav .fa-stack {
+    width: 50px;
+    margin-right: 20px;
+    display: inline-block;
+    font-size: 1em; }
+  nav .nav-wrapper li a {
+    margin-top: 10px;
+    font-size: 1.2em; }

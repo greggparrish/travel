@@ -1,0 +1,5 @@
+table, tr, th, td {
+  transition: all .5s linear; }
+
+th {
+  text-transform: capitalize; }

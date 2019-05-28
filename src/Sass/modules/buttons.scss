@@ -1,0 +1,26 @@
+@import "colors.scss";
+
+button { transition: all .3s linear; }
+
+.submit {
+  display: block;
+  float: right;
+  margin: 20px 0;
+
+}
+.btn-flat {
+  border-radius: 0;
+  background: transparent;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  &.green {
+    border: 1px solid $dark_green;
+    color: $dark_green;
+    &:hover, &:active, &:focus{
+      color: $white;
+      background-color: $dark_green;
+    }
+  }
+  &.disabled { border: 1px $light_grey solid; }
+}

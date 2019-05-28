@@ -1,0 +1,18 @@
+h1 {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700; }
+
+h1, h2, h3 {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  display: block; }
+
+a {
+  color: #28a3dc; }
+  a:hover {
+    transition: color 0.3s;
+    color: #012c5b; }
+
+.fa-stack {
+  width: 100%;
+  margin: 0 auto;
+  display: block; }

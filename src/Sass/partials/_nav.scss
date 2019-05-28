@@ -1,0 +1,28 @@
+nav {
+  font-family: 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  overflow: auto;
+  .navbar-brand {
+    font-size: 1.2em;
+    color: $light_blue!important;
+  }
+  a {
+    color: $light_blue!important;
+    text-transform: uppercase;
+  }
+  .fa-stack {
+    width: 50px;
+    margin-right: 20px;
+    display: inline-block;
+    font-size: 1em;
+  }
+  background-color: transparent;
+  .nav-wrapper {
+    li {
+      a {
+        margin-top: 10px;
+        font-size: 1.2em;
+      }
+    }
+  }
+}

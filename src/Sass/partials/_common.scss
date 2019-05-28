@@ -1,0 +1,47 @@
+#root {
+  height: 100%;
+  min-height: 100vh;
+  font-size: 16px;
+  #content-wrapper {
+    flex:1;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+:focus { outline: 0!important; }
+section {
+  h2 {margin: 0 auto;}
+  margin: 40px 0;
+  padding: 40px 0;
+  &#about {background: $light-grey; text-align: center;}
+  &#overpaid {
+    h2 { text-align: center;}
+  }
+  &#searchbox {
+    margin-top: -100px;
+    padding: 160px 0;
+    color: $white;
+    background-image: url('/images/structural/header.jpg');
+    .btn {
+      padding: 20px;
+    }
+    .searchbox-wrapper {
+      min-height: 400px;
+      background: $trans_grey;
+      border-radius: .5em;
+      padding: 3%;
+      h3 {
+        color: $black;
+        font-weight: 700;
+      }
+      &.flights {
+        .fa-circle {color: $med_blue; }
+      }
+      &.hotels {
+        .fa-circle {color: $med_green; }
+      }
+    }
+    h1 {text-align: center; margin: 50px 0 20px 0; font-size: 3em;}
+    h3 {text-align: center; margin: 20px 0; font-size: 2em;}
+  }
+}
