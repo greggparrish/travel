@@ -1,20 +1,77 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Python
+# pyenv
+*$py.class
+*.cover
+*.egg
+*.egg-info/
+*.log
+*.manifest
+*.mo
+*.pot
+*.py[cod]
+*.so
+*.spec
+.Python
+.cache
+.coverage
+.coverage.*
+.eggs/
+.hypothesis/
+.installed.cfg
+.nox/
+.pytest_cache/
+.python-version
+.tox/
+.webassets-cache
+MANIFEST
+__pycache__/
+build/
+coverage.xml
+db.sqlite3
+db.sqlite3-journal
+develop-eggs/
+dist/
+downloads/
+eggs/
+htmlcov/
+instance/
+lib/
+lib64/
+local_settings.py
+nosetests.xml
+parts/
+pip-delete-this-directory.txt
+pip-log.txt
+pip-wheel-metadata/
+sdist/
+share/python-wheels/
+var/
+wheels/
+Pipfile.lock
 
-# dependencies
-/node_modules
-/.pnp
+# Environments
+.env*
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# js dependencies
+.pnp
 .pnp.js
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+web/node_modules
 
 # testing
 /coverage
 
-# production
-/build
+# raw data
+api/data
 
-# misc
-.DS_Store
-.env*
-
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Flask migrations
+*/migrations/

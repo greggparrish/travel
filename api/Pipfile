@@ -20,8 +20,3 @@ flask-marshmallow = "*"
 marshmallow-sqlalchemy = "*"
 simplejson = "*"
 flask-cors = "*"
-
-[dev-packages]
-
-[requires]
-python_version = "3.6"
