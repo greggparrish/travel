@@ -8,7 +8,10 @@ import IconStacked from '../Components/IconStacked'
 class NavBar extends Component {
   constructor(props) {
     super(props);
-    this.cs = this.props.commonStore
+  }
+  smoothScroll(e) {
+    e.preventDefault();
+    document.getElementById("about").scrollIntoView({behavior: "smooth"});
   }
   render() {
     return (
@@ -26,7 +29,7 @@ class NavBar extends Component {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ml-auto">
                 <Nav.Link href="/">Home</Nav.Link>
-                <Nav.Link href="/#about">About</Nav.Link>
+                <a href="/#about" class="nav-link" onClick={(e) => this.smoothScroll(e)}>About</a>
                 <Nav.Link href="/search">Search</Nav.Link>
               </Nav>
             </Navbar.Collapse>
@@ -36,5 +39,5 @@ class NavBar extends Component {
     );
   }
 }
-export default inject('commonStore')(observer(NavBar));
+export default NavBar;
 

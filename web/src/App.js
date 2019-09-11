@@ -11,17 +11,15 @@ import SearchView from './Pages/SearchView';
 import Footer from './Components/Footer';
 import NavBar from './Components/NavBar';
 
-import commonStore from './Stores/CommonStore';
 import flightStore from './Stores/FlightStore';
-import localStore from './Stores/LocalStore';
+import cityStore from './Stores/CityStore';
 
 import './App.css';
 
 configure({enforceActions: 'always'});
 const stores = {
-  commonStore,
-  flightStore,
-  localStore,
+  cityStore,
+  flightStore
 }
 
 function App() {
@@ -33,12 +31,10 @@ function App() {
             <Router>
               <Switch>
                 <Route
-                  store={flightStore}
                   path="/flights/:origin/:destination"
                   component={withRouter(FlightView)}
                 />
                 <Route
-                  store={localStore}
                   path="/local/:id/:citySlug?"
                   component={withRouter(LocalView)}
                 />

@@ -8,7 +8,6 @@ import IconStacked from '../Components/IconStacked'
 class Header extends Component {
   constructor(props) {
     super(props);
-    this.cs = this.props.commonStore
   }
   render() {
     return (
@@ -17,4 +16,4 @@ class Header extends Component {
     );
   }
 }
-export default inject('commonStore')(observer(Header));
+export default Header;

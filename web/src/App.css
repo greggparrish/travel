@@ -63,7 +63,6 @@ input.form-control {
   outline: 0 !important; }
 
 section {
-  margin: 40px 0;
   padding: 40px 0; }
   section h2 {
     margin: 0 auto; }
@@ -101,10 +100,9 @@ section {
       font-size: 2em; }
 
 footer {
-  color: #012c5b;
-  background: #e0e0e0;
-  padding: 40px 0;
-  margin-top: 10px; }
+  color: #3498db;
+  background: #505050;
+  padding: 40px 0; }
 
 nav {
   font-family: 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;

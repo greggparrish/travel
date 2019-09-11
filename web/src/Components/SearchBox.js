@@ -7,7 +7,7 @@ const SearchBox = (props) => (
   <Container>
     <h1>SEARCH GSA TRAVEL DATA</h1>
     <Row>
-      <Col s={12} m={6}>
+      <Col sm={12} md={6}>
         <div className='searchbox-wrapper flights'>
           <IconStacked
             stackIcon='fa-circle'
@@ -39,7 +39,7 @@ const SearchBox = (props) => (
           </Form>
         </div>
       </Col>
-      <Col s={12} m={6}>
+      <Col sm={12} md={6}>
         <div className='searchbox-wrapper hotels'>
           <IconStacked
             stackIcon='fa-circle'

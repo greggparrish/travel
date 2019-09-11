@@ -27,4 +27,4 @@ class Home extends Component {
   }
 }
 
-export default inject('flightStore', 'commonStore')(observer(Home));
+export default inject('flightStore')(observer(Home));
