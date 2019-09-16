@@ -35,18 +35,16 @@ with open('airlines.dat') as cities:
         except:
             print(airline)
 
-        if active == 'Y' and country in ['Canada', 'Mexico', 'United States']:
+        if active == 'Y' and country in ['United States', ]:
             cur.execute(f"Select * from airline where iata='{iata}'")
             exists = cur.fetchall()
             if exists:
                 pass
             else:
-                if country == 'United States':
-                    country = 'United States of America'
                 cur.execute(f"Select id from country where name = '{country}'")
                 country = cur.fetchone()
-                sql = "insert into airline(name, iata, icao, slug, country_id) values(%s, %s, %s, %s, %s)"
-                cur.execute(sql, (name, iata, icao, slugify(f"{name} {country}"), country[0]))
+                sql = "insert into airline(name, iata, icao, country_id) values(%s, %s, %s, %s)"
+                cur.execute(sql, (name, iata, icao, country[0]))
                 conn.commit()
 
 cur.close()

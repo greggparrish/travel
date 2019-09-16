@@ -39,15 +39,14 @@ with open('airports-extended.dat') as cities:
         except:
             print(city)
 
-        if stype == 'airport' and country in ['Canada', 'Mexico', 'United States']:
-            if iata == 'LAX':
+        if stype == 'airport' and country in ['United States']:
             cur.execute(f"Select * from airport where latitude={lat} and longitude={lng}")
             exists = cur.fetchall()
             if exists:
                 pass
             else:
-                sql = "insert into airport(name, alias, iata, icao, latitude, longitude, altitude, slug) values(%s, %s, %s, %s, %s, %s, %s, %s)"
-                cur.execute(sql, (name, alias, iata, icao, lat, lng, alt, slugify(name)))
+                sql = "insert into airport(name, alias, iata, icao, latitude, longitude, altitude) values(%s, %s, %s, %s, %s, %s, %s)"
+                cur.execute(sql, (name, alias, iata, icao, lat, lng, alt))
                 conn.commit()
 
 cur.close()
