@@ -71,7 +71,9 @@ web/node_modules
 /coverage
 
 # raw data
-api/data
+*.csv
+*.dat
+*.sql
 
 # Flask migrations
 */migrations/
